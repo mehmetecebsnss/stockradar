@@ -5,19 +5,14 @@ After=network.target
 [Service]
 Type=simple
 User=pi
-WorkingDirectory=/home/pi/AcilPiyasaBotu
-ExecStart=/usr/bin/python3 /home/pi/AcilPiyasaBotu/bot.py
+WorkingDirectory=/home/pi/stockradar
+ExecStart=/home/pi/stockradar/venv/bin/python3 /home/pi/stockradar/bot.py
 Restart=always
 RestartSec=10
-StandardOutput=append:/home/pi/AcilPiyasaBotu/stockradar.log
-StandardError=append:/home/pi/AcilPiyasaBotu/stockradar.log
-
-# Environment
+StandardOutput=append:/home/pi/stockradar/stockradar.log
+StandardError=append:/home/pi/stockradar/stockradar.log
 Environment="PYTHONUNBUFFERED=1"
-
-# Güvenlik ayarları
 Nice=0
-CPUQuota=80%
 
 [Install]
 WantedBy=multi-user.target

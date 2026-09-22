@@ -1,0 +1,17 @@
+[Unit]
+Description=StockRadar Pro — Auto Update Service
+After=network.target stockradar.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/stockradar
+ExecStart=/bin/bash /home/pi/stockradar/auto_update.sh
+Restart=always
+RestartSec=10
+StandardOutput=append:/home/pi/stockradar/auto_update.log
+StandardError=append:/home/pi/stockradar/auto_update.log
+Environment="PYTHONUNBUFFERED=1"
+
+[Install]
+WantedBy=multi-user.target
