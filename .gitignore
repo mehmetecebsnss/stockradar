@@ -1,0 +1,62 @@
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# Veritabanı
+*.db
+*.sqlite
+*.sqlite3
+dashboard.db
+
+# Log dosyaları
+*.log
+stockradar.log
+
+# API Keys ve Config (GİZLİ TUTULACAK)
+config.py
+
+# Test dosyaları
+test_*.py
+*_test.py
+nasdaq_data_test.py
+hizli_test.py
+find_group_id.py
+seed_trades.py
+add_history.py
+test_group.py
+test_gemini_key.py
+test_dashboard.py
+
+# Step dosyaları (geliştirme amaçlı)
+step1_*.py
+step2_*.py
+step3_*.py
+
+# Eski sistem dosyaları
+FULL_SYSTEM.py
+HIZLI_BASLANGIC.md
+KULLANIM_KILAVUZU.md
+
+# Geçici dosyalar
+*.json
+analiz_sonucu.json
+son_analiz.json
+
+# Sistem dosyaları
+.DS_Store
+Thumbs.db

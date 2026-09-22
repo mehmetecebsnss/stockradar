@@ -1,0 +1,14 @@
+# StockRadar Pro - Python Dependencies
+
+# Core
+requests>=2.31.0
+pandas>=1.5.0
+
+# Telegram Bot
+python-telegram-bot>=20.0
+
+# Web Dashboard
+Flask>=2.3.0
+
+# Optional (if using full features)
+# google-generativeai>=0.3.0  # Gemini AI için
